@@ -1,10 +1,14 @@
 # README #
 
-See on esimese kodutöö failide hoidla, mida saab kasutada ainult algseks lugemiseks.
-Töötamiseks looge endale isiklik repositoorium, näiteks (privaatne) 'fork' bitbucket serverisse, millest saate luua klooni oma arvutisse.
+This repository is read-only, make a private fork in the bitbucket server
+for your own files. Clone this forked repository to your local computer and solve
+the task.
 
-## Näidete kasutamine käsurealt ##
-#### Kompileerimine: ####
+See on esimese kodutöö failide hoidla, mida saab kasutada ainult algseks lugemiseks.
+Töötamiseks looge endale isiklik repositoorium, näiteks privaatne 'fork' bitbucket serverisse, millest saate luua klooni oma arvutisse.
+
+## Command line examples. Näidete kasutamine käsurealt ##
+#### Compilation. Kompileerimine: ####
 
 ```
 #!bash
@@ -12,7 +16,7 @@ Töötamiseks looge endale isiklik repositoorium, näiteks (privaatne) 'fork' bi
 javac -cp src src/Sheep.java
 ```
 
-#### Käivitamine: ####
+#### Execution. Käivitamine: ####
 
 ```
 #!bash
@@ -21,8 +25,8 @@ java -cp src Sheep
 ```
 
 
-### Testide kasutamine ###
-#### Testi kompileerimine: ####
+### Usage of tests. Testide kasutamine ###
+#### Compilation of a test. Testi kompileerimine: ####
 
 ```
 #!bash
@@ -30,7 +34,7 @@ java -cp src Sheep
 javac -encoding utf8 -cp 'src:test:test/junit-4.13.1.jar:test/hamcrest-core-1.3.jar' test/SheepTest.java
 
 ```
-Sama Windows aknas (koolonite asemel peavad olema semikoolonid):
+In Windows replace colons by semicolons. Sama Windows aknas (koolonite asemel peavad olema semikoolonid):
 
 ```
 #!bash
@@ -40,7 +44,7 @@ javac -encoding utf8 -cp 'src;test;test/junit-4.13.1.jar;test/hamcrest-core-1.3.
 
 ```
 
-#### Testi käivitamine: ####
+#### Running a test. Testi käivitamine: ####
 
 ```
 #!bash
@@ -48,7 +52,7 @@ javac -encoding utf8 -cp 'src;test;test/junit-4.13.1.jar;test/hamcrest-core-1.3.
 java -cp 'src:test:test/junit-4.13.1.jar:test/hamcrest-core-1.3.jar' org.junit.runner.JUnitCore SheepTest
 ```
 
-Sama Windows aknas (koolonite asemel semikoolonid):
+The same for Windows. Sama Windows aknas (koolonite asemel semikoolonid):
 
 ```
 #!bash
